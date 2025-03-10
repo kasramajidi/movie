@@ -111,7 +111,7 @@ function App() {
             <div className="flex flex-col gap-5">
               <span>Search Results</span>
               <div className="grid grid-cols-4 gap-8">
-                {data.Search.map((movie: any) => (
+                {data.Search.map((movie) => (
                   <div
                     key={movie.imdbID}
                     className="flex flex-col gap-5 shadow-lg"
