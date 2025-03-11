@@ -130,7 +130,13 @@ function App() {
                     <div className="flex flex-col gap-5 px-4 py-2">
                       <h2 className="text-lg">{movie.Title}</h2>
                       <span>{movie.Year}</span>
-                      <span>IMDb Rating: {movie.imdbID}</span>
+                      {
+                        movie.imdbID !== "N/A" ? (
+                          <span>IMDb Rating: {movie.imdbID}</span>
+                        ) : (
+                          <span>IMDb Rating: N/A</span>
+                        )
+                      }
                       <span>Your Rating: ★★★★★</span>
                     </div>
                   </div>
